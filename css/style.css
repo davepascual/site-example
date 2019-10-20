@@ -1,0 +1,171 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Calibri, sans-serif;
+    font-size: 1.3rem;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    display: block;
+    width: 100%;
+}
+
+.main{
+    height: 100vh;
+    
+    background: url('../images/cover4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    width: 300px;
+    padding: 30px;
+    border: #ccc solid thin;
+    color: #fff;
+}
+
+.login-form .form-group{
+    display: block;
+    padding:  20px;
+}   
+
+.form-group label,
+.form-group input{
+    display:block;
+    width: 100%;
+}
+
+.form-group label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input{
+    height: 30px;
+    padding: 5px;
+}
+
+.form-group .btn{
+    padding: 10px;
+    background-color: cornflowerblue;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    width:100%;
+    border:none;  
+}
+
+.form-group .btn:hover{
+    background-color: darkcyan;
+    transition:  background-color 0.3s;
+}
+
+
+/* Home */
+nav{
+    height: 5vh;
+    position: sticky;
+    font-size: 1rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav-link{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.nav-link .link{
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ .link:hover{
+    color: #fff;
+    background-color: #333;
+    transition:  color 0.3s linear;
+}
+
+main{
+    height:95vh;
+    background: url('../images/cover3.jpg');
+    background-color: rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0px;
+    color: #fff;
+}
+
+main h1.header-title{
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+main p{
+    font-size: 1.3rem;
+}
+
+section{
+    padding: 20px;
+    color: #000;
+}
+
+section.flex{
+    
+    display: flex;
+}
+
+section div{
+    padding: 0px 15px;
+}
+
+section img{
+    width:500px;
+    flex-grow: 0;
+}
+
+.f1{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.f2{
+    font-size: 1.5rem;
+}
+
+#scroll-top{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    color: #fff;
+    padding: 5px;
+    background-color:rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.title{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: #333 solid 2px;
+}

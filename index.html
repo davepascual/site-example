@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        
+        <div class="main">
+            <div class="login-form">
+                <form method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-signin" id="login-btn">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        
+        <script>
+            if(localStorage.getItem('login') == 'true')
+                window.location = 'home.html'
+                
+            const loginBtn = document.querySelector('#login-btn')
+
+            loginBtn.addEventListener('click',e=>{
+
+                e.preventDefault()
+                var userName =  document.querySelector('#username').value
+                var password =  document.querySelector('#password').value
+                
+
+                if(userName=='admin' && password =='password')
+                {
+                    alert('Login successful!')
+                    localStorage.setItem("login",true)
+                    window.location = 'home.html'
+                }
+                else
+                    alert('Username and password is invalid!')
+            })
+        </script>
+    </body>
+</html>
